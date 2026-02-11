@@ -34,6 +34,8 @@ For an introduction to our work, visit the [project webpage](https://dsb-ifi.git
 
 ## Installation
 
+📚 **New to dHT?** Check out our [**Getting Started Guide**](GETTING_STARTED.md) for a complete tutorial!
+
 The repo can currently be installed as a package via:
 
 ```bash
