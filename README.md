@@ -58,7 +58,51 @@ model = torch.hub.load(
 )
 ```
 
-This will load the model and downloaded the pretrained weights, stored in your local `torch.hub` directory. 
+This will load the model and downloaded the pretrained weights, stored in your local `torch.hub` directory.
+
+## Documentation & Examples
+
+### 📓 Notebooks
+
+Comprehensive Jupyter notebooks covering all aspects of dHT:
+
+1. **[Tokenization Basics](notebooks/01_dht_tokenization_basics.ipynb)** - Introduction to dHT tokenization
+2. **[ViT Integration](notebooks/02_vit_integration.ipynb)** - Using dHT with Vision Transformers
+3. **[Training Pipeline](notebooks/03_training_pipeline.ipynb)** - Complete training examples
+4. **[Embedding Fix](notebooks/04_embedding_fix.ipynb)** - Understanding positional embeddings and mean injection
+5. **[Adapting ViT Models](notebooks/05_adapting_vit_models.ipynb)** - Retrofit pre-trained models with dHT
+6. **[Video Models (ViViT)](notebooks/06_video_models_vivit.ipynb)** - Applying dHT to video understanding
+
+### 🚀 Example Scripts
+
+Located in the `examples/` directory:
+
+- **basic_tokenization.py** - Basic tokenization demonstration
+- **train_classifier.py** - Complete training script
+- **inference.py** - Run inference with trained models
+
+See [examples/README.md](examples/README.md) for detailed usage instructions.
+
+### Quick Start
+
+```bash
+# Run basic tokenization example
+python examples/basic_tokenization.py
+
+# Train a model
+python examples/train_classifier.py --epochs 10
+
+# Explore notebooks
+jupyter notebook notebooks/
+```
+
+## Key Features
+
+- **Adaptive Tokenization**: Creates variable-sized tokens based on image content
+- **Backward Compatible**: Works with existing Vision Transformer architectures
+- **Differentiable**: End-to-end trainable
+- **Efficient**: Fewer tokens for simple regions, more for complex areas
+- **Flexible**: Supports various image sizes and video inputs
 
 ## Citation
 
