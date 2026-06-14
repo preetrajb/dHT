@@ -173,9 +173,10 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-# Ignore all Jupyter notebooks except demo
+# Ignore all Jupyter notebooks except demo and notebooks directory
 *.ipynb
 !demo_raster2svg.ipynb
+!notebooks/*.ipynb
 
 # Various
 /dht/_trash/*
